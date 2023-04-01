@@ -1,1 +1,1 @@
-[WIP] A 3D port of ggbois website
+[WIP] A 3D model port of  Team GGbois website
