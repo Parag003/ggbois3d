@@ -58,13 +58,15 @@ const deg2rad = (degrees) => degrees * (Math.PI / 180);
 function CatScene() {
   return (
     <Canvas dpr={[1, 2]} shadows>
-      <PerspectiveCamera position={[100, 100, 1000]} makeDefault />
+      {/* <PerspectiveCamera position={[100, 100, 1000]} makeDefault /> */}
       <pointLight position={[10, 5, -5]} intensity={1} color="#fff" />
       <color attach="background" args={["#000000"]} />
+      <PresentationControls>
+        <Stage environment={null}>
+          <Present scale={0.01} />
+        </Stage>
+      </PresentationControls>
 
-      <Stage environment={null}>
-        <Present scale={0.01} />
-      </Stage>
     </Canvas>
   );
 }
